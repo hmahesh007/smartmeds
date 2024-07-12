@@ -1,0 +1,40 @@
+{
+  "name": "react-app",
+  "private": true,
+  "version": "0.0.0",
+  "proxy": "http://localhost:5000",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "react-scripts start",
+    "start-flask": "cd /Users/arnavdixit/Downloads/hfh_copy && flask run",
+    "dev": "concurrently \"npm start\" \"npm run start-flask\""
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^1.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.2.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
